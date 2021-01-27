@@ -52,6 +52,16 @@ main{
         overflow: scroll;
         padding: 20px 0 0 20px;
 }
+div#autocomplete-list{
+        position: absolute;
+        background-color: #fff;
+        display: none;
+        width: 25rem!important;
+}
+#search:focus + div#autocomplete-list {
+        display: block;
+        
+}
 div#autocomplete-list div,
 .listData li{
         text-align: left;
@@ -63,7 +73,7 @@ div#autocomplete-list div,
 }
 
 div#autocomplete-list{
-        height: 25vh;
+        max-height: 26vh;
         overflow: scroll;
 }
 div a {
