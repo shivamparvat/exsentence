@@ -31,7 +31,8 @@ const fuse = new Fuse(wordList, options)
     }
     });
 }
-function keypres(data){
+function keypres(data) {
+   console.log("hello")
     const value = searchData.value;
     dataList.textContent = "";
     navLink.textContent = "";
