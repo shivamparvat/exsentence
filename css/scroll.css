@@ -1,0 +1,25 @@
+/* scroll bar */
+:-webkit-scrollbar-track
+{
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.267);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 4px;
+	background-color: #00000000;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: rgb(173, 173, 173);	
+	background-image: -webkit-linear-gradient(45deg,
+	                                          #ffffff33 25%,
+						transparent 25%,
+						transparent 50%,
+						#ffffff33 50%,
+						#ffffff33 75%,
+						transparent 75%,
+						transparent)
+}
