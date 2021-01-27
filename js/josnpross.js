@@ -1,7 +1,7 @@
 const searchData = document.querySelector("#search");
 const dataList = document.querySelector(".listData");
 const navLink = document.querySelector(".nav-link");
-const webLink ="http://127.0.0.1:5500/"
+const webLink ="https://shivamgoswami2711.github.io/exsentense/"
 const autocomplete = document.querySelector("#autocomplete-list")
 
 // fetch data in json
