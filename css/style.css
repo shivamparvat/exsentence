@@ -16,7 +16,7 @@ main{
         align-items: center;
         justify-content: center;
 }
-.textCantainer{
+.textCantainer, h1{
         margin: 30px 0 10px 0;
         color: #0000008a;
 }
