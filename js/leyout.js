@@ -53,7 +53,7 @@ section_Secand_Form_Input.setAttribute("class", "form-control me-2");
 section_Secand_Form_Input.setAttribute("id", "search");
 section_Secand_Form_Input.setAttribute("type", "search");
 section_Secand_Form_Input.setAttribute("placeholder", placeholder); 
-section_Secand_Form_Input.setAttribute("aria-label", "search"); 
+section_Secand_Form_Input.setAttribute("aria-label", "search");     
 section_Secand_Form_Input.setAttribute("autocomplete", "off");
 section.appendChild(sectionDivSecand);
 sectionDivSecand.appendChild(sectionDivSecandDiv);

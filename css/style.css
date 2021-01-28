@@ -58,7 +58,9 @@ div#autocomplete-list{
         display: none;
         width: 25rem!important;
 }
-#search:focus + div#autocomplete-list {
+#search:focus + div#autocomplete-list,
+div#autocomplete-list:focus,
+.auto_anchor:focus{
         display: block;
         
 }
@@ -76,13 +78,18 @@ div#autocomplete-list{
         max-height: 26vh;
         overflow: scroll;
 }
+div a:hover{
+        color: #0b4fb650;
+}
 div a {
-    color: #0d6efd;
-    text-decoration: none;
+        cursor: pointer;
+        color: #0d6efd;
+        text-decoration: none;
 }
 
-
-
-
-
-
+.none{
+        display: none;
+}
+ol, ul {
+    padding: .2rem!important;
+}
