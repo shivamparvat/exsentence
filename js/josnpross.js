@@ -50,6 +50,7 @@ function autoText(result, data) {
   autocomplete.textContent=" "
   for (var i=0; i < 20; i++) {
     const divCh = document.createElement("div");
+    divCh.setAttribute("class","autoLiks")
     const divA = document.createElement("a");
     divA.setAttribute("class", "auto_anchor");
     divA.textContent=result[i].item
@@ -57,6 +58,7 @@ function autoText(result, data) {
     divCh.append(divA)
   }
   throttle(textsuggestion(result,data), 500);
+  throttle(listremove(), 500);
 }
 
 
@@ -90,7 +92,7 @@ function textsuggestion(result, data) {
 // ######
 
 autocomplete.addEventListener("click", e => {
-  console.log(e.target.innerText)
+  // console.log(e.target.innerText)
   e.target.href= webLink+"datafile"+e.target.innerText
 })
 
@@ -118,7 +120,6 @@ function addActiveClass(event) {
         item.classList.remove("active")
     })
   event.target.classList.add("active");
-
 }
 //  remove none class in contant  
 
@@ -129,5 +130,13 @@ function seeData(e) {
     if (e.innerText==item.id) {
      item.classList.remove("none")
     }
+  })
+}
+function listremove() {
+  const autocomplete_list = document.querySelectorAll(".autoLiks");
+  autocomplete_list.forEach(item => {
+    item.addEventListener("click", (e) => {
+      e.target.parentNode.textContent = "";
+    })
   })
 }

@@ -55,14 +55,7 @@ main{
 div#autocomplete-list{
         position: absolute;
         background-color: #fff;
-        display: none;
         width: 25rem!important;
-}
-#search:focus + div#autocomplete-list,
-div#autocomplete-list:focus,
-.auto_anchor:focus{
-        display: block;
-        
 }
 div#autocomplete-list div,
 .listData li{
@@ -92,4 +85,11 @@ div a {
 }
 ol, ul {
     padding: .2rem!important;
+}
+.tabActive{
+        background-color: #0d6dfd!important;
+        color: #ffffff;
+}
+.tabActive a{
+        color:#fff
 }
