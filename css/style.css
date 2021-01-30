@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import "scroll.css";
+@import "media.css";
 *{
         margin: 0;
         padding: 0;
@@ -19,6 +20,9 @@
 }
 li{
         list-style-type: none;
+}
+strong{
+        color: #1241add0;
 }
 .bg-primary {
     background-color: #0d6efd!important;
@@ -132,9 +136,15 @@ main{
 }
 div#autocomplete-list{
         position: absolute;
+        display: none;
         background-color: #fff;
-        width: 25rem!important;
+        width: 25rem;
 }
+#search:focus + div#autocomplete-list,
+div#autocomplete-list:active{
+        display: block;
+}
+
 div#autocomplete-list div,
 .listData li{
         text-align: left;

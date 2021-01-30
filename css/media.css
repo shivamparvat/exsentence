@@ -1,0 +1,21 @@
+@media( max-width:880px){
+    .border{
+        width: 40rem!important;
+    }
+}
+@media( max-width:660px){
+    .border{
+        width: 30rem!important;
+    }
+    .form-control {
+    width: 20rem!important;
+    }
+}
+@media( max-width:490px){
+    .border{
+        width: 25rem!important;
+    }
+    .form-control {
+    width: 15rem!important;
+    }
+}

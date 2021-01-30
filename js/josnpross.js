@@ -63,8 +63,11 @@ function listremove() {
   const autocomplete_list = document.querySelectorAll(".autoLiks");
   autocomplete_list.forEach(item => {
     item.addEventListener("click", (e) => {
-      window.location.assign("post/" + e.target.innerText + ".html");
-      e.target.parentNode.textContent = "";
+      if (window.location.href.indexOf('post') == -1) {
+          window.location.assign("post/" + e.target.innerText + ".html");
+        } else {
+          window.location.assign(e.target.innerText + ".html");
+        }
     })
   })
 }
@@ -94,8 +97,7 @@ function addTabActive(e)
     if(searchData.value == ""){
       alert("please enter value")
     }
-    console.log(currentFocus)
-    if (currentFocus >= 0) {
+    if (currentFocus >= 0 && searchData.value != "") {
         if (window.location.href.indexOf('post') == -1) {
           window.location.assign("post/" + autoLiks[currentFocus].children[0].innerText + ".html");
         } else {
@@ -104,13 +106,12 @@ function addTabActive(e)
           e.preventDefault();
     } else
     {
-      alert("please select word")
+      alert("please select word use up👆 and down👇 key or mouse")
     }
   } 
 }
 
 function addtabActive(autoLiks, inc = true) {
-  console.log(autocomplete.scrollTop)
   if (inc) {
         if (currentFocus > 0) {
           x += 30;

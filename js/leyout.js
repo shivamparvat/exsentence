@@ -1,8 +1,8 @@
 // content variable
 
 const webName = "EXSENTANSE"
-const heading = "Lorem ipsum dolor sit amet."
-const discription = "Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet."
+const heading = "SEARCH A WORD"
+const discription = "search word and get how to use word in srntanse "
 const placeholder ="search"
 
 const body = document.querySelector("body");
