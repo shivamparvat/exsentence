@@ -129,4 +129,3 @@ function addtabActive(autoLiks, inc = true) {
   autoLiks[currentFocus].classList.add("tabActive");
   searchData.value = autoLiks[currentFocus].children[0].innerText;
 }
-
