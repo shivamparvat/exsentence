@@ -130,3 +130,20 @@ function addtabActive(autoLiks, inc = true) {
   autoLiks[currentFocus].classList.add("tabActive");
   searchData.value = autoLiks[currentFocus].children[0].innerText;
 }
+
+dataList.addEventListener("click", (e) => {
+  throttle(textToAudio(e.target.innerText),5000)
+})
+let sh = 0
+function textToAudio(msg) {
+  
+                console.log(sh++)
+                let speech = new SpeechSynthesisUtterance();
+                speech.lang = "en-US";
+                speech.text = msg;
+                speech.volume = 1;
+                speech.rate = 1;
+                speech.pitch = 1;
+                
+                window.speechSynthesis.speak(speech);
+            }
