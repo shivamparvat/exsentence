@@ -1,6 +1,6 @@
 // content variable
 
-const webName = "EXSENTANSE";
+const webName = "EX.SENTANSE";
 let heading = "SEARCH A WORD";
 const discription = "search word and get how to use word in srntanse ";
 const placeholder = "search";
@@ -68,6 +68,9 @@ if (window.location.href !== url) {
     massage.setAttribute("role", "alert");
     massage.textContent = msg;
     section.appendChild(massage);
+    massage.addEventListener("click", () => {
+        massage.setAttribute("class", "none");
+    })
 }
 // section third
 body.appendChild(section);
