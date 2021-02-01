@@ -149,7 +149,7 @@ div#autocomplete-list div,
 .listData li{
         text-align: left;
         padding: 4px 0 0 30px;
-        margin:2px;
+        border-bottom: 2px solid #fff;
         color: rgb(92, 91, 91);
         list-style-type: none;
         background-color: rgba(109, 108, 108, 0.116);
