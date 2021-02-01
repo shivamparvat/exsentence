@@ -142,7 +142,7 @@ function textToAudio(msg) {
   speech.lang = "en-US";
   speech.text = msg.innerText;
   speech.volume = 0.7;
-  speech.rate = 0.9;
+  speech.rate = 1.2;
   speech.pitch = 20;
   window.speechSynthesis.cancel();
   msg.appendChild(icon)
