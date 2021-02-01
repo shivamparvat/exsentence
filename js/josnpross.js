@@ -132,18 +132,21 @@ function addtabActive(autoLiks, inc = true) {
 }
 
 dataList.addEventListener("click", (e) => {
-  throttle(textToAudio(e.target.innerText),5000)
+  throttle(textToAudio(e.target),5000)
 })
-let sh = 0
 function textToAudio(msg) {
-  
-                console.log(sh++)
-                let speech = new SpeechSynthesisUtterance();
-                speech.lang = "en-US";
-                speech.text = msg;
-                speech.volume = 1;
-                speech.rate = 1;
-                speech.pitch = 1;
-                
-                window.speechSynthesis.speak(speech);
+  const icon = document.createElement("i");
+  icon.setAttribute("class", "fa fa-volume-down");
+  icon.setAttribute("aria-hidden", "true");
+  let speech = new SpeechSynthesisUtterance();
+  speech.lang = "en-US";
+  speech.text = msg.innerText;
+  speech.volume = 0.7;
+  speech.rate = 1;
+  speech.pitch = 50;
+  window.speechSynthesis.cancel();
+  msg.appendChild(icon)
+  icon.parentNode.removeChild(icon.parentNode.childNodes[2]);
+  window.speechSynthesis.speak(speech);
+  msg.appendChild(icon)
             }

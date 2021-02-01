@@ -1,7 +1,7 @@
 // content variable
 
 const webName = "EXSENTANSE"
-const heading = "SEARCH A WORD"
+let heading = "SEARCH A WORD"
 const discription = "search word and get how to use word in srntanse "
 const placeholder ="search"
 

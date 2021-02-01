@@ -155,6 +155,11 @@ div#autocomplete-list div,
         background-color: rgba(109, 108, 108, 0.116);
 }
 
+i.fa.fa-volume-down {
+    color: #1241add0;
+    font-size: 20px;
+    padding-left: 43px;
+}
 
 div#autocomplete-list{
         max-height: 26vh;
@@ -168,7 +173,6 @@ div a {
         color: #0d6efd;
         text-decoration: none;
 }
-
 .none{
         display: none;
 }
