@@ -1,10 +1,11 @@
 // content variable
 
-const webName = "EXSENTANSE"
-let heading = "SEARCH A WORD"
-const discription = "search word and get how to use word in srntanse "
-const placeholder ="search"
-
+const webName = "EXSENTANSE";
+let heading = "SEARCH A WORD";
+const discription = "search word and get how to use word in srntanse ";
+const placeholder = "search";
+const msg = "select sentence to listen";
+const url = "shivamgoswami2711.github.io/exsentence/"
 const body = document.querySelector("body");
 
 // nav bar
@@ -61,8 +62,13 @@ sectionDivSecandDiv.appendChild(sectionDivSecandDivForm);
 sectionDivSecandDivForm.appendChild(sectionDivSecandDivFormDiv);
 sectionDivSecandDivFormDiv.appendChild(section_Secand_Form_Input);
 sectionDivSecandDivFormDiv.appendChild(divautocomplete);
-
-
+if (window.location.href !== "http://127.0.0.1:5500/") {
+    console.log('hello')
+    const massage = document.createElement("div");
+    massage.setAttribute("class", "alert alert-primary");
+    massage.setAttribute("role", "alert");
+    massage.textContent = msg;
+    section.appendChild(massage);
+}
 // section third
-
 body.appendChild(section);

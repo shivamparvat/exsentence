@@ -181,8 +181,24 @@ ol, ul {
 }
 .tabActive{
         background-color: #0d6dfd!important;
-        color: #ffffff;
+        color: #ffffff!important;
+}
+.tabActive strong{
+color: #85ff00;
 }
 .tabActive a{
         color:#fff
+}
+
+.alert-primary {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
 }

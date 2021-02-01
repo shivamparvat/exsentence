@@ -135,18 +135,21 @@ dataList.addEventListener("click", (e) => {
   throttle(textToAudio(e.target),5000)
 })
 function textToAudio(msg) {
-  const icon = document.createElement("i");
-  icon.setAttribute("class", "fa fa-volume-down");
-  icon.setAttribute("aria-hidden", "true");
   let speech = new SpeechSynthesisUtterance();
   speech.lang = "en-US";
   speech.text = msg.innerText;
   speech.volume = 0.7;
-  speech.rate = 1.2;
+  speech.rate = 0.8;
   speech.pitch = 20;
   window.speechSynthesis.cancel();
-  msg.appendChild(icon)
-  icon.parentNode.removeChild(icon.parentNode.childNodes[2]);
+  removeTabActive()
+  msg.classList.add("tabActive")
   window.speechSynthesis.speak(speech);
-  msg.appendChild(icon)
-            }
+}
+
+function removeTabActive() {
+  let tabactive = document.querySelectorAll(".tabActive")
+  tabactive.forEach(i => {
+    i.classList.remove("tabActive")
+  })
+}
