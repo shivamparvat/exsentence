@@ -63,7 +63,6 @@ sectionDivSecandDivForm.appendChild(sectionDivSecandDivFormDiv);
 sectionDivSecandDivFormDiv.appendChild(section_Secand_Form_Input);
 sectionDivSecandDivFormDiv.appendChild(divautocomplete);
 if (window.location.href !== url) {
-    console.log('hello')
     const massage = document.createElement("div");
     massage.setAttribute("class", "alert alert-primary");
     massage.setAttribute("role", "alert");

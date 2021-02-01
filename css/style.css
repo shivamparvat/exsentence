@@ -162,6 +162,7 @@ i.fa.fa-volume-down {
 }
 
 div#autocomplete-list{
+        z-index: 1;
         max-height: 26vh;
         overflow: scroll;
 }
