@@ -64,10 +64,15 @@ sectionDivSecandDivFormDiv.appendChild(section_Secand_Form_Input);
 sectionDivSecandDivFormDiv.appendChild(divautocomplete);
 if (window.location.href !== url) {
     const massage = document.createElement("div");
+    const Pmassage = document.createElement("span");
+    const Smassage = document.createElement("span");
     massage.setAttribute("class", "alert alert-primary");
     massage.setAttribute("role", "alert");
-    massage.textContent = msg;
+    Pmassage.textContent = msg;
+    Smassage.textContent = "x";
     section.appendChild(massage);
+    massage.appendChild(Pmassage);
+    massage.appendChild(Smassage);
     massage.addEventListener("click", () => {
         massage.setAttribute("class", "none");
     })

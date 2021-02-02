@@ -203,3 +203,10 @@ color: #85ff00;
     border: 1px solid transparent;
     border-radius: .25rem;
 }
+
+.alert-primary span:last-child {
+    position: relative;
+    top: -19px;
+    left: 19px;
+    cursor: pointer;
+}
