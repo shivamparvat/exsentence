@@ -140,7 +140,7 @@ function textToAudio(msg) {
   speech.text = msg.innerText;
   speech.volume = 0.7;
   speech.rate = 0.8;
-  speech.pitch = 20;
+  speech.pitch = 1.5;
   window.speechSynthesis.cancel();
   removeTabActive()
   msg.classList.add("tabActive")
