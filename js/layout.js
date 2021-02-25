@@ -1,6 +1,6 @@
 // content variable
 
-const webName = "EX.SENTANSE";
+const webName = "EX.SENTENCE";
 let heading = "SEARCH A WORD";
 const discription = "search word and get how to use word in srntanse ";
 const placeholder = "search";
