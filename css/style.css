@@ -22,7 +22,7 @@ li{
         list-style-type: none;
 }
 strong{
-        color: #1241add0;
+        color: #ff00a5;
 }
 .bg-primary {
     background-color: #0d6efd!important;
@@ -70,7 +70,7 @@ main{
 }
 .textCantainer, h1{
         margin: 30px 0 10px 0;
-        color: #00000080;
+        color: #9c9c9c80;
 }
 .textCantainer p{
         text-align: center;
@@ -122,7 +122,7 @@ main{
 }
 
 .sentence a{
-        color: #0000008a;
+        color: #9c9c9c80;
 }
 .border{
         border: 1px solid #00000049;
