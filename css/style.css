@@ -150,7 +150,7 @@ div#autocomplete-list div,
         text-align: left;
         padding: 4px 0 0 30px;
         border-bottom: 2px solid #fff;
-        color: rgb(92, 91, 91);
+        color: rgb(191, 191, 191);
         list-style-type: none;
         background-color: rgba(109, 108, 108, 0.116);
 }
@@ -185,7 +185,7 @@ ol, ul {
         color: #ffffff!important;
 }
 .tabActive strong{
-color: #85ff00;
+color: #ff00af;
 }
 .tabActive a{
         color:#fff
