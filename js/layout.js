@@ -2,7 +2,7 @@
 
 const webName = "EX.SENTENCE";
 let heading = "SEARCH A WORD";
-const discription = "search word and get how to use word in srntanse ";
+const discription = "search word and get how to use word in sentence ";
 const placeholder = "search";
 const msg = "select sentence to listen";
 const url = "https://shivamgoswami2711.github.io/exsentence/"
